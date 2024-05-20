@@ -10,5 +10,5 @@ TEST(CalcTest, TestName) {
 TEST(CalcTest, GetZegop) {
 	Calc calc;
 	int ret = calc.getZegop(3);
-	EXPECT_EQ(ret, 3);
+	EXPECT_EQ(ret, 9);
 }
