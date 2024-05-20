@@ -1,8 +1,8 @@
 #include "pch.h"
 #include "../CalcTest/Calc.cpp"
 
-TEST(CalcTest, TestName) {
+
+TEST(CalcTest, GetMinus) {
 	Calc calc;
-	int sum = calc.getSum(1, 2);
-	EXPECT_EQ(sum, 3);
+	EXPECT_EQ(1, calc.getMinus(2, 1));
 }
