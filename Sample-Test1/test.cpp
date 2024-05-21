@@ -7,7 +7,12 @@ TEST(CalcTest, getSum) {
 	EXPECT_EQ(sum, 3);
 }
 
-TEST(CalcTest, getGop) {
+TEST(CalcTest, TestGetMinus) {
+	Calc calc;
+	int ret = calc.getMinus(2, 1);
+	EXPECT_EQ(ret, 1);
+
+  TEST(CalcTest, getGop) {
 	Calc calc;
 	int Gop = calc.getGop(1, 2);
 	EXPECT_EQ(Gop, 2);
