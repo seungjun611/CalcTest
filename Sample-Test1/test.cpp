@@ -17,6 +17,7 @@ TEST(CalcTest, TestGetMinus) {
 	Calc calc;
 	int ret = calc.getMinus(2, 1);
 	EXPECT_EQ(ret, 1);
+}
 
 TEST(CalcTest, getGop) {
 	Calc calc;
@@ -34,4 +35,9 @@ TEST(CalcTest, GetZegop) {
 	Calc calc;
 	int ret = calc.getZegop(3);
 	EXPECT_EQ(ret, 9);
+}
+
+TEST(DivdeTest, TestName) {
+	EXPECT_EQ(Calc().getDivide(2, 1), 2);
+	EXPECT_THROW(Calc().getDivide(2, 0), std::exception);
 }
